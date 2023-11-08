@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Your Personal GitHub Page</title>
+
+    <style>
+        body {
+            max-width: 595px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background-color: #151515;
+            color: #FAFAFA;
+            display: flex;
+            flex-direction: column;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.5;
+        }
+
+        .mock-link {
+            font-family: monospace;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Creating Your Personal GitHub Page</h1>
+    <h2>Step 1: Repository Setup</h2>
+    <ol>
+        <li>Sign in to your GitHub account or create one if you haven't already.</li>
+        <li>Click on the 'New' button in the top right to create a new repository.</li>
+        <li>Name your repository as <span class="mock-link">&lt;username&gt;.github.io</span>. Replace &lt;username&gt;
+            with your GitHub username.</li>
+        <li>Choose 'Public' so that your page is accessible to everyone.</li>
+        <li>Click 'Create repository.'</li>
+    </ol>
+
+    <h2>Step 2: Upload Your Website Files</h2>
+    <ol>
+        <li>Create an 'index.html' file for your website. A very basic website structure would be:</li>
+    </ol>
+
+    <pre style="padding: .5rem; background-color: #2f2f2f; border-radius: 3px;">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title>Your Name&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1>Your Name&lt;/h1&gt;
+        &lt;img src="your-image.jpg" alt="Your Name"&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+        </pre>
+
+    <ol start="2">
+        <li>Navigate to the repository you have created in the previous step, and click the top right button to 'Add
+            file' and select 'Upload files'.</li>
+        <li>Upload your 'index.html' file and the image you used to your repository. Make sure the image is in the same
+            folder as the index.html file.</li>
+        <li>Commit the changes.</li>
+    </ol>
+
+    <h2>Step 3: Check Your Page</h2>
+    <ol>
+        <li>After a few moments, your page will be accessible at <span
+                class="mock-link">https://&lt;username&gt;.github.io</span>.
+        </li>
+    </ol>
+
+    <h2>Optional Enhancements</h2>
+    <p>You can further customize your page by editing the HTML and CSS in your 'index.html' file.</p>
+    <p>For a very simple way of adding some styling to your page, you can add styles to the head of your index.html
+        file. For example:</p>
+    <pre style="padding: .5rem; background-color: #2f2f2f; border-radius: 3px;">
+    &lt;style&gt;
+        body {
+            max-width: 595px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background-color: #151515;
+            color: #FAFAFA;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.5;
+        }
+    
+        img {
+            display: block;
+            width: 100%;
+        }
+    
+        h1 {
+            margin: 0;
+            text-align: center;
+        }
+    &lt;/style&gt;
+        </pre>
+</body>
+
+</html>
