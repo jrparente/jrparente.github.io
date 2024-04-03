@@ -37,41 +37,26 @@
     </header>
 
     <main class="container mt-5">
-        <h1>Projects</h1>
-        <p class="mb-4 mt-2">The following projects were developed as exercises for my MIT xPRO - Professional
-            Certificate in Coding: Full Stack
-            Development with MERN course. While
-            they
-            demonstrate my skills and capabilities, for a more extensive overview of my work, please visit my official
-            portfolio
-            site at <a href="https://joanaramosparente.pt/">joanaramosparente.pt</a>.</p>
-        <div class="row">
-            <div class="col-md-6">
-                <h2>PacMen Exercise</h2>
-                <p>A JavaScript project where PacMen move randomly around the screen. The PacMen change direction
-                    when they hit the screen edges. This project demonstrates DOM manipulation and event handling
-                    using JavaScript.</p>
-                <a href="https://github.com/jrparente/mit-pro-pacmen" target="_blank">GitHub Repository</a>
-            </div>
-            <div class="col-md-6">
-                <h2>Eye Exercise</h2>
-                <p>An interactive web page where the eyes follow the mouse cursor. This project utilizes HTML,
-                    CSS, and JavaScript to create a fun and engaging experience. It demonstrates DOM manipulation
-                    and event handling in JavaScript.</p>
-                <a href="https://github.com/jrparente/mit-pro-eye-exercise" target="_blank">GitHub Repository</a>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <h2>Real Time Bus Tracking</h2>
-                <p>A web application that displays real-time bus locations on a map. This project integrates with
-                    the Mapbox API to fetch and display bus data. It demonstrates API usage and asynchronous
-                    JavaScript programming.</p>
-                <a href="https://github.com/jrparente/mit-pro-real-time-bus-tracking" target="_blank">GitHub
-                    Repository</a>
+
+        <div class="bg-dark text-secondary px-4 py-5 text-center">
+            <div class="py-5">
+                <h1 class="display-5 fw-bold text-white">Projects</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="fs-5 mb-4">The following projects were developed as exercises for my MIT xPRO -
+                        Professional
+                        Certificate in Coding: Full Stack
+                        Development with MERN course. While
+                        they
+                        demonstrate my skills and capabilities, for a more extensive overview of my work, please visit
+                        my official
+                        portfolio
+                        site at <a href="https://joanaramosparente.pt/">joanaramosparente.pt</a>.</p>
+
+                </div>
             </div>
         </div>
 
+        <div id="projects" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"></div>
     </main>
 
     <footer class="container-fluid bg-dark text-white py-3 mt-auto border-top">
@@ -102,12 +87,24 @@
                                 </svg>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:jrparente@gmail.com" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
+                                    <path
+                                        d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-md-12 text-center">
-                    <p class="text-white-50 disclaimer-text">This portfolio was developed for the MIT xPRO -
+                    <p class="text-secondary disclaimer-text">This portfolio was developed for the MIT xPRO -
                         Professional
                         Certificate in Coding: Full Stack
                         Development with MERN course
@@ -123,7 +120,70 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script>
+        const projects = [
+            {
+                id: 1,
+                name: "PacMen Exercise",
+                description:
+                    "A JavaScript project where PacMen move randomly around the screen. The PacMen change direction when they hit the screen edges. This project demonstrates DOM manipulation and event handling using JavaScript.",
+                githubLink: "https://github.com/jrparente/mit-pro-pacmen",
+                liveSite: "https://jrparente.github.io/mit-pro-pacmen/",
+                image: "https://github.com/jrparente/mit-pro-pacmen/blob/main/screenshot.png?raw=true",
+                date: "Feb 2024"
+            },
+            {
+                id: 2,
+                name: "Eye Exercise",
+                description:
+                    "An interactive web page where the eyes follow the mouse cursor. This project utilizes HTML, CSS, and JavaScript to create a fun and engaging experience. It demonstrates DOM manipulation and event handling in JavaScript.",
+                githubLink: "https://github.com/jrparente/mit-pro-eye-exercise",
+                liveSite: "https://jrparente.github.io/mit-pro-eye-exercise/",
+                image: "https://github.com/jrparente/mit-pro-eye-exercise/blob/main/screenshot.png?raw=true",
+                date: "Feb 2024"
+            },
+            {
+                id: 3,
+                name: "React Tic-Tac-Toe",
+                description:
+                    "A simple Tic-Tac-Toe game built with React. This project demonstrates the use of React components, props, and state to create an interactive user interface.",
+                githubLink: "https://github.com/jrparente/mit-pro-tic-tac-toe",
+                liveSite: "https://jrparente.github.io/mit-pro-tic-tac-toe/",
+                image: "https://github.com/jrparente/mit-pro-tic-tac-toe/blob/main/screenshot.png?raw=true",
+                date: "Apr 2024"
+            },
+        ];
 
+        const projectsContainer = document.getElementById('projects');
+
+        // Loop through projects data and create project cards dynamically
+        projects.reverse().forEach(project => {
+            const card = document.createElement('div');
+            card.classList.add('col-md-6');
+            card.innerHTML = `
+            <div.col>
+                <div class="card bg-dark text-secondary mb-3 shadow-sm">
+                    <img src="${project.image}" alt="${project.name}" class="img-fluid card-img-top" width="100%" height="225">
+                    
+
+                    
+                    <div class="card-body"> 
+                        <h2 class="card-title text-white">${project.name}</h2>
+                        <p class="card-text">${project.description}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="${project.githubLink}" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary">GitHub Repository</button></a>
+                                <a href="${project.liveSite}" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary">Live Demo</button></a>
+                            </div>
+                            <small class="text-secondary">${project.date}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+            projectsContainer.appendChild(card);
+        });
+    </script>
 </body>
 
 </html>

@@ -53,3 +53,16 @@
         .disclaimer-text {
             font-size: .8rem;
         }
+
+        .btn-primary {
+            background-color: #FFD700;
+            border-color: #FFD700;
+            color: #000;
+            font-weight: 600;
+
+            &:hover {
+                background-color: #fff19e;
+                border-color: #fff19e;
+                color: #000;
+            }
+        }
