@@ -11,21 +11,30 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
-<body class="bg-dark d-flex w-100 h-100 min-vh-100 text-center text-bg-dark mx-auto flex-column">
+<body class="d-flex w-100 h-100 min-vh-100 text-center text-bg-dark mx-auto flex-column">
     <header class="mb-auto">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="/">Joana Parente</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">
+                    <img src="favicon-32x32.png" alt="Joana Parente">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="projects.html">Projects</a>
@@ -45,15 +54,19 @@
             <div class="col-lg-6">
                 <span class="intro">Hi, my name is</span>
                 <h1 class="display-5 fw-bold lh-1 mb-3">Joana Parente</h1>
-                <h2 class="mb-4">I build things for the web.</h2>
-                <p class="lead">Portugal-based Full-Stack Developer, transitioning from a career in account management
-                    and digital marketing. With a
+                <h2 class="mb-4 lead">I build things for the web.</h2>
+                <p>Portugal-based Full-Stack Developer, transitioning from a career in account management
+                    and digital marketing.</p>
+                <p>With a
                     deep understanding of business needs and client relations, I aim to bring a unique perspective to
-                    the world of code. Currently enrolled in MIT xPRO - Professional Certificate in Coding: Full Stack
-                    Development with MERN, ending in August
+                    the world of code.</p>
+                <p>Currently enrolled in <strong>MIT xPRO - Professional Certificate in Coding: Full
+                        Stack
+                        Development with MERN</strong>, ending in August
                     2024.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">View Projects</button>
+                    <a href="/projects.html"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">View
+                            Projects</button></a>
                 </div>
             </div>
         </div>
@@ -61,11 +74,11 @@
 
 
 
-    <footer class="container-fluid bg-dark text-white py-3 mt-auto border-top">
+    <footer class="container-fluid text-white py-3 mt-auto">
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-4 text-center text-md-start">
-                    <span>&copy; Joana Parente</span>
+                    <small>&copy; Joana Parente</small>
                 </div>
                 <div class="col-md-4">
                     <ul class="nav justify-content-center justify-content-md-end">
