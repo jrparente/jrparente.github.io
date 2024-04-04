@@ -8,11 +8,11 @@ This portfolio project serves as a showcase of my journey in mastering the MERN 
 
 ## Features
 
-- Responsive design for optimal viewing across various devices.
-- Navigation bar for easy access to different sections of the portfolio.
-- Home page with an introduction and contact information.
-- Projects page showcasing exercises and projects developed during the course.
-- Footer with social media links.
+- **Responsive Design:** The portfolio is designed to ensure optimal viewing experience across various devices, ensuring accessibility and usability for all users.
+
+- **Single Page Application (SPA) Functionality:** Utilizes a simple routing system built with JavaScript to enable seamless navigation between different sections without the need for page reloads. This approach enhances both developer and user experience by reducing loading times and providing a smoother navigation experience.
+
+- **Efficient Header and Footer Management:** By employing SPA functionality, header and footer elements are included in the `index.html` file, and therefore they are consistent across all pages and are only edited once, streamlining development efforts and maintaining a cohesive user interface.
 
 ## Technologies Used
 
