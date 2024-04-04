@@ -19,6 +19,15 @@
   },
   {
     "id": 3,
+    "name": "To-do App",
+    "description": "A simple to-do list app built with React. This project demonstrates the use of React components, props, and state to create an interactive user interface.",
+    "githubLink": "https://github.com/jrparente/mit-pro-to-do-app",
+    "liveSite": "https://jrparente.github.io/mit-pro-to-do-app/",
+    "image": "https://github.com/jrparente/mit-pro-to-do-app/blob/master/public/images/screenshot.png?raw=true",
+    "date": "Mar 2024"
+  },
+  {
+    "id": 4,
     "name": "React Tic-Tac-Toe",
     "description": "A simple Tic-Tac-Toe game built with React. This project demonstrates the use of React components, props, and state to create an interactive user interface.",
     "githubLink": "https://github.com/jrparente/mit-pro-tic-tac-toe",
