@@ -17,7 +17,8 @@ This portfolio project serves as a showcase of my journey in mastering the MERN 
 ## Technologies Used
 
 - HTML5
-- CSS3 (Bootstrap)
-- JavaScript (Bootstrap)
+- CSS3
+- JavaScript
+- Bootstrap
 - Git (version control)
 - GitHub Pages (deployment)

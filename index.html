@@ -36,11 +36,11 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="/" aria-label="Home page">Home <span
+                            <a class="nav-link active" href="#homepage" aria-label="Home page">Home <span
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="projects.html" aria-label="Projects page">Projects</a>
+                            <a class="nav-link" href="#projects" aria-label="Projects page">Projects</a>
                         </li>
                     </ul>
                 </div>
@@ -48,35 +48,7 @@
         </nav>
     </header>
 
-    <main class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6 mx-auto d-block">
-                <img src="joana-parente.jpg" class="rounded d-block mx-lg-auto img-fluid" alt="Joana Parente"
-                    width="700" height="500" loading="lazy">
-            </div>
-            <div class="col-lg-6">
-                <span class="intro">Hi, my name is</span>
-                <h1 class="display-5 fw-bold lh-1 mb-3">Joana Parente</h1>
-                <h2 class="mb-4 lead">I build things for the web.</h2>
-                <p>Portugal-based Full-Stack Developer, transitioning from a career in account management
-                    and digital marketing.</p>
-                <p>With a
-                    deep understanding of business needs and client relations, I aim to bring a unique perspective to
-                    the world of code.</p>
-                <p>Currently enrolled in <strong>MIT xPRO - Professional Certificate in Coding: Full
-                        Stack
-                        Development with MERN</strong>, ending in August
-                    2024.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                    <a href="/projects.html" aria-label="Projects page"><button type="button"
-                            class="btn btn-primary btn-lg px-4 me-md-2">View
-                            Projects</button></a>
-                </div>
-            </div>
-        </div>
-    </main>
-
-
+    <main id="content" class="container col-xxl-8 px-4 py-5"></main>
 
     <footer class="container-fluid text-white py-3 mt-auto">
         <div class="container">
@@ -139,6 +111,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="index.js" type="module" defer></script>
+    <script src="projects.js" type="module" defer></script>
 </body>
 
 </html>

@@ -25,21 +25,43 @@ class Project extends HTMLElement {
   }
 }
 
-window.addEventListener("load", () => {
-  createProjectList();
-});
-
 async function createProjectList() {
-  const response = await fetch("/projects.json");
-  const projects = await response.json();
+  try {
+    const response = await fetch("/projects.json");
+    if (!response.ok) {
+      throw new Error("Projects not found");
+    }
+    const projects = await response.json();
 
-  const projectsContainer = document.getElementById("projects");
+    const projectsContainer = document.getElementById("projects");
+    if (!projectsContainer) {
+      throw new Error("Projects container not found");
+    }
 
-  projects.reverse().forEach((project) => {
-    const projectElement = document.createElement("project-card");
-    projectElement.project = project;
-    projectsContainer.appendChild(projectElement);
-  });
+    projects.reverse().forEach((project) => {
+      const projectElement = document.createElement("project-card");
+      projectElement.project = project;
+      projectsContainer.appendChild(projectElement);
+    });
+  } catch (error) {
+    console.error(error);
+    const projectsContainer = document.getElementById("projects");
+    projectsContainer.innerHTML = `
+      <div class="alert alert-danger" role="alert">
+        Projects not found
+      </div>
+    `;
+  }
 }
 
 customElements.define("project-card", Project);
+window.addEventListener("hashchange", () => {
+  if (window.location.hash === "#projects") {
+    createProjectList();
+  }
+});
+window.addEventListener("DOMContentLoaded", () => {
+  if (window.location.hash === "#projects") {
+    createProjectList();
+  }
+});
