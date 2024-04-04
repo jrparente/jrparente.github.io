@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "PacMen Exercise",
+    "description": "A JavaScript project where PacMen move randomly around the screen. The PacMen change direction when they hit the screen edges. This project demonstrates DOM manipulation and event handling using JavaScript.",
+    "githubLink": "https://github.com/jrparente/mit-pro-pacmen",
+    "liveSite": "https://jrparente.github.io/mit-pro-pacmen/",
+    "image": "https://github.com/jrparente/mit-pro-pacmen/blob/main/screenshot.png?raw=true",
+    "date": "Feb 2024"
+  },
+  {
+    "id": 2,
+    "name": "Eye Exercise",
+    "description": "An interactive web page where the eyes follow the mouse cursor. Built with HTML, CSS, and JavaScript, it demonstrates DOM manipulation and event handling in JavaScript.",
+    "githubLink": "https://github.com/jrparente/mit-pro-eye-exercise",
+    "liveSite": "https://jrparente.github.io/mit-pro-eye-exercise/",
+    "image": "https://github.com/jrparente/mit-pro-eye-exercise/blob/main/screenshot.png?raw=true",
+    "date": "Feb 2024"
+  },
+  {
+    "id": 3,
+    "name": "React Tic-Tac-Toe",
+    "description": "A simple Tic-Tac-Toe game built with React. This project demonstrates the use of React components, props, and state to create an interactive user interface.",
+    "githubLink": "https://github.com/jrparente/mit-pro-tic-tac-toe",
+    "liveSite": "https://jrparente.github.io/mit-pro-tic-tac-toe/",
+    "image": "https://github.com/jrparente/mit-pro-tic-tac-toe/blob/main/screenshot.png?raw=true",
+    "date": "Apr 2024"
+  }
+]

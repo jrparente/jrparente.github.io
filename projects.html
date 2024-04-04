@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joana Parente - Projects</title>
+    <meta name="description"
+        content="Projects developed by Joana Parente as part of the MIT xPRO - Professional Certificate in Coding: Full Stack Development with MERN course. Dive into PacMen Exercise, Eye Exercise, and React Tic-Tac-Toe, demonstrating her proficiency in JavaScript, HTML, CSS, and React.">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -19,7 +21,7 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 
-<body class="bg-dark d-flex w-100 h-100 min-vh-100 text-center text-bg-dark mx-auto flex-column">
+<body class="d-flex w-100 h-100 min-vh-100 text-center text-bg-dark mx-auto flex-column">
     <header class="mb-auto">
         <nav class="navbar navbar-expand navbar-dark">
             <div class="container">
@@ -34,10 +36,11 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/" aria-label="Home page">Home <span
+                                    class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="projects.html">Projects</a>
+                            <a class="nav-link active" href="projects.html" aria-label="Projects page">Projects</a>
                         </li>
                     </ul>
                 </div>
@@ -45,27 +48,23 @@
         </nav>
     </header>
 
-    <main class="container mt-5">
+    <main class="container col-xxl-8 px-4 py-5">
 
         <div class="text-secondary px-4 py-5 text-center">
             <div class="py-5">
                 <h1 class="display-5 fw-bold text-white">Projects</h1>
                 <div class="col-lg-6 mx-auto">
-                    <p class="fs-5 mb-4">The following projects were developed as exercises for my MIT xPRO -
-                        Professional
-                        Certificate in Coding: Full Stack
-                        Development with MERN course. While
-                        they
-                        demonstrate my skills and capabilities, for a more extensive overview of my work, please visit
-                        my official
-                        portfolio
-                        site at <a href="https://joanaramosparente.pt/">joanaramosparente.pt</a>.</p>
+                    <p class="lead mb-4">The following projects were developed as exercises for my <strong>MIT xPRO -
+                            Professional Certificate in Coding: Full Stack Development with MERN</strong> course.</p>
+                    <p class="lead mb-4">While they demonstrate my skills and capabilities, for a more extensive
+                        overview of my work, please visit my official
+                        portfolio site at <a href="https://joanaramosparente.pt/">joanaramosparente.pt</a>.</p>
 
                 </div>
             </div>
         </div>
 
-        <div id="projects" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"></div>
+        <div id="projects" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3"></div>
     </main>
 
     <footer class="container-fluid text-white py-3 mt-auto">
@@ -129,67 +128,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script>
-        const projects = [
-            {
-                id: 1,
-                name: "PacMen Exercise",
-                description:
-                    "A JavaScript project where PacMen move randomly around the screen. The PacMen change direction when they hit the screen edges. This project demonstrates DOM manipulation and event handling using JavaScript.",
-                githubLink: "https://github.com/jrparente/mit-pro-pacmen",
-                liveSite: "https://jrparente.github.io/mit-pro-pacmen/",
-                image: "https://github.com/jrparente/mit-pro-pacmen/blob/main/screenshot.png?raw=true",
-                date: "Feb 2024"
-            },
-            {
-                id: 2,
-                name: "Eye Exercise",
-                description:
-                    "An interactive web page where the eyes follow the mouse cursor. Built with HTML, CSS, and JavaScript, it demonstrates DOM manipulation and event handling in JavaScript.",
-                githubLink: "https://github.com/jrparente/mit-pro-eye-exercise",
-                liveSite: "https://jrparente.github.io/mit-pro-eye-exercise/",
-                image: "https://github.com/jrparente/mit-pro-eye-exercise/blob/main/screenshot.png?raw=true",
-                date: "Feb 2024"
-            },
-            {
-                id: 3,
-                name: "React Tic-Tac-Toe",
-                description:
-                    "A simple Tic-Tac-Toe game built with React. This project demonstrates the use of React components, props, and state to create an interactive user interface.",
-                githubLink: "https://github.com/jrparente/mit-pro-tic-tac-toe",
-                liveSite: "https://jrparente.github.io/mit-pro-tic-tac-toe/",
-                image: "https://github.com/jrparente/mit-pro-tic-tac-toe/blob/main/screenshot.png?raw=true",
-                date: "Apr 2024"
-            },
-        ];
 
-        const projectsContainer = document.getElementById('projects');
-
-        // Loop through projects data and create project cards dynamically
-        projects.reverse().forEach(project => {
-            const card = document.createElement('div');
-            card.classList.add('col-md-6');
-            card.innerHTML = `
-            <div.col>
-                <div class="card bg-dark text-secondary mb-3 shadow-sm">
-                    <img src="${project.image}" alt="${project.name}" class="img-fluid card-img-top" width="100%" height="225">
-                    <div class="card-body"> 
-                        <h2 class="card-title text-white">${project.name}</h2>
-                        <p class="card-text">${project.description}</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group" role="group" aria-label="Project Links">
-                                <button type="button" class="btn btn-sm btn-outline-secondary"><a href="${project.githubLink}" target="_blank">GitHub</a></button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary"><a href="${project.liveSite}" target="_blank">Live Demo</a></button>
-                            </div>
-                            <small class="text-secondary">${project.date}</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            `;
-            projectsContainer.appendChild(card);
-        });
-    </script>
+    <!-- Custom JS -->
+    <script src="projects.js" type="module" defer></script>
 </body>
 
 </html>
