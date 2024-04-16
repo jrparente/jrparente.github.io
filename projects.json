@@ -41,7 +41,7 @@
     "description": "A front end banking application, built using React, Next.js, and Bootstrap, that allows users to create an account, and perform deposits and withdrawals.",
     "githubLink": "https://github.com/jrparente/mit-pro-frontend-banking-application",
     "liveSite": "https://jrparente.github.io/mit-pro-frontend-banking-application/",
-    "image": "https://github.com/jrparente/mit-pro-frontend-banking-application/blob/main/screenshot.png?raw=true",
+    "image": "https://github.com/jrparente/mit-pro-frontend-banking-application/blob/master/public/images/screenshot.png?raw=true",
     "date": "May 2024"
   }
 ]
