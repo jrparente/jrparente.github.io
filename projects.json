@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "PacMen Exercise",
-    "description": "A JavaScript project where PacMen move randomly around the screen. The PacMen change direction when they hit the screen edges. This project demonstrates DOM manipulation and event handling using JavaScript.",
+    "description": "A JavaScript project where PacMen move randomly around the screen and change direction when they hit the screen edges. It demonstrates DOM manipulation and event handling using JavaScript.",
     "githubLink": "https://github.com/jrparente/mit-pro-pacmen",
     "liveSite": "https://jrparente.github.io/mit-pro-pacmen/",
     "image": "https://github.com/jrparente/mit-pro-pacmen/blob/main/screenshot.png?raw=true",
@@ -34,5 +34,14 @@
     "liveSite": "https://jrparente.github.io/mit-pro-tic-tac-toe/",
     "image": "https://github.com/jrparente/mit-pro-tic-tac-toe/blob/main/screenshot.png?raw=true",
     "date": "Apr 2024"
+  },
+  {
+    "id": 5,
+    "name": "React Front End Banking Application",
+    "description": "A front end banking application, built using React, Next.js, and Bootstrap, that allows users to create an account, and perform deposits and withdrawals.",
+    "githubLink": "https://github.com/jrparente/mit-pro-frontend-banking-application",
+    "liveSite": "https://jrparente.github.io/mit-pro-frontend-banking-application/",
+    "image": "https://github.com/jrparente/mit-pro-frontend-banking-application/blob/main/screenshot.png?raw=true",
+    "date": "May 2024"
   }
 ]
