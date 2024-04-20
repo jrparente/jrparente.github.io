@@ -42,6 +42,15 @@
     "githubLink": "https://github.com/jrparente/mit-pro-frontend-banking-application",
     "liveSite": "https://jrparente.github.io/mit-pro-frontend-banking-application/",
     "image": "https://github.com/jrparente/mit-pro-frontend-banking-application/blob/master/public/images/screenshot.png?raw=true",
-    "date": "May 2024"
+    "date": "Apr 2024"
+  },
+  {
+    "id": 6,
+    "name": "React Shopping Cart",
+    "description": "A simple shopping cart application built with React, features item addition/removal, total price display, and Bootstrap styling. It fetches data from a Strapi API or hardcoded content, with improved UX/UI and additional features like stock alerts and restocking.",
+    "githubLink": "https://github.com/jrparente/mit-pro-restock-shopping-cart",
+    "liveSite": "https://jrparente.github.io/mit-pro-restock-shopping-cart/",
+    "image": "https://github.com/jrparente/mit-pro-restock-shopping-cart/blob/main/images/screenshot.png?raw=true",
+    "date": "Apr 2024"
   }
 ]
