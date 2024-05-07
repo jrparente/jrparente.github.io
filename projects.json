@@ -38,9 +38,9 @@
   {
     "id": 5,
     "name": "React Front End Banking Application",
-    "description": "A front end banking application, built using React, Next.js, and Bootstrap, that allows users to create an account, and perform deposits and withdrawals.",
+    "description": "A front end banking application, built using React, Next.js, and Bootstrap, that allows users to create an account, and perform deposits and withdrawals. Deployed on AWS S3.",
     "githubLink": "https://github.com/jrparente/mit-pro-frontend-banking-application",
-    "liveSite": "https://jrparente.github.io/mit-pro-frontend-banking-application/",
+    "liveSite": "https://joana-parente-banking-application.s3.eu-north-1.amazonaws.com/index.html",
     "image": "https://github.com/jrparente/mit-pro-frontend-banking-application/blob/master/public/images/screenshot.png?raw=true",
     "date": "Apr 2024"
   },
